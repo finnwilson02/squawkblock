@@ -7,7 +7,7 @@ This guide explains how to set up the OptiTrack system to receive VRPN data for 
 ## Lab Instructions for OptiTrack Setup
 
 1. **Location of the OptiTrack system**:
-   - The **OptiTrack cupboard** is located to the left of the orange power board, next to the door to the UAV lab. The code for the lock is **1008**.
+   - The **OptiTrack cupboard** is located to the left of the orange power board, next to the door to the UAV lab. The code for the lock is **xxxx**.
    - **Reminder**: Lock the cupboard after use.
 
 2. **Powering up the system**:
@@ -18,8 +18,8 @@ This guide explains how to set up the OptiTrack system to receive VRPN data for 
    - The Optitrack PC can now be turned on - there is no password required
 
 4. **Connect to the correct WiFi**:
-   - Network: `UAVLab 2.4G`
-   - Password: `idontknow`.
+   - Network: `UAV-LAB-2.4G`
+   - Password: `xxxx`.
    - The Optitrack PC should be connected via ethernet, but you will need to connect your **UAVs** and **Client PC** to the lab network, as university firewalls won't allow any of this :)
 
 5. **Configure Motive for VRPN Streaming**:
