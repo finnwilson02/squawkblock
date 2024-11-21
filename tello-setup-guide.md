@@ -178,3 +178,63 @@ if __name__ == "__main__":
     monitor = DroneMonitor()
     monitor.run()
 ```
+
+### 4. Command Shortcut
+Add to `~/.bashrc`:
+```bash
+alias monitor='cd ~/squawkblock && python3 monitor.py'
+```
+
+### 5. Apply Changes
+```bash
+source ~/.bashrc
+```
+
+## Usage
+
+### On Tracker Pis
+1. Power on Tello drone
+2. Wait for drone to create wifi network
+3. Run appropriate tracker command:
+```bash
+tracker1  # On first Pi
+tracker2  # On second Pi
+tracker3  # On third Pi
+```
+
+### On Monitor (Ubuntu Server)
+```bash
+monitor
+```
+- Shows all connected drone feeds
+- Displays telemetry overlay
+- Press 'q' to quit
+
+## Troubleshooting
+1. Check Tello wifi is visible:
+```bash
+nmcli device wifi list | grep TELLO
+```
+
+2. Verify ZMQ connections:
+```bash
+# Test if ports are open
+netstat -an | grep 5555
+```
+
+3. Test network connectivity:
+```bash
+# Ping between devices
+ping tracker1.local
+ping tracker2.local
+ping tracker3.local
+```
+
+4. Check logs:
+```bash
+# View recent logs
+tail -f ~/tello_logs/tracker1.log
+```
+
+
+Would you like me to add any additional sections to the README or modify any of the scripts?
